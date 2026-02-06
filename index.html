@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bangladesh Government Portal — Modern Redesign</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <header class="site-header">
+      <div class="topbar container">
+        <p>People's Republic of Bangladesh</p>
+        <div class="top-actions">
+          <a href="#">বাংলা</a>
+          <a href="#">Accessibility</a>
+          <a href="#">e-Directory</a>
+        </div>
+      </div>
+
+      <div class="nav-wrap container">
+        <a class="brand" href="#" aria-label="Bangladesh Government Portal">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/f/f9/Seal_of_the_Government_of_Bangladesh.svg"
+            alt="Government Seal of Bangladesh"
+          />
+          <div>
+            <strong>বাংলাদেশ জাতীয় তথ্য বাতায়ন</strong>
+            <span>National Portal of Bangladesh</span>
+          </div>
+        </a>
+
+        <button class="menu-toggle" aria-expanded="false" aria-controls="primary-nav">☰</button>
+
+        <nav id="primary-nav" class="primary-nav" aria-label="Main">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li class="has-dropdown">
+              <button aria-expanded="false">Government ▾</button>
+              <ul class="dropdown">
+                <li><a href="#president">President</a></li>
+                <li><a href="#pm-office">Prime Minister's Office</a></li>
+                <li><a href="#ministries">Ministries & Divisions</a></li>
+                <li><a href="#cabinet">Cabinet Division</a></li>
+              </ul>
+            </li>
+            <li class="has-dropdown">
+              <button aria-expanded="false">Citizen Services ▾</button>
+              <ul class="dropdown">
+                <li><a href="#services">All Services</a></li>
+                <li><a href="#forms">Forms</a></li>
+                <li><a href="#hotline">Emergency Hotline</a></li>
+                <li><a href="#complaints">Complaints</a></li>
+              </ul>
+            </li>
+            <li class="has-dropdown">
+              <button aria-expanded="false">Information ▾</button>
+              <ul class="dropdown">
+                <li><a href="#notice-board">Notices</a></li>
+                <li><a href="#news">News</a></li>
+                <li><a href="#procurement">Tender</a></li>
+                <li><a href="#calendar">Events</a></li>
+              </ul>
+            </li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <section class="hero container">
+        <div class="hero-copy">
+          <p class="kicker">Welcome to Bangladesh National Portal</p>
+          <h1>Smart, Citizen-First Digital Government Experience</h1>
+          <p>
+            Access ministries, divisions, forms, notices, and online government services from one
+            clean and modern platform inspired by world-class public service portals.
+          </p>
+          <form class="search" role="search" aria-label="Site Search">
+            <input type="search" id="site-search" placeholder="Search services, offices, forms or notices..." />
+            <button type="submit">Search</button>
+          </form>
+          <p id="search-feedback" class="search-feedback" aria-live="polite"></p>
+          <div class="hero-tags">
+            <span>16100 National Info Service</span>
+            <span>999 Emergency</span>
+            <span>333 Citizen Helpline</span>
+          </div>
+        </div>
+
+        <div class="hero-media">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/5/59/Jatiyo_Sangsad_Bhaban_%28National_Parliament_House%29_%2835826954626%29.jpg"
+            alt="Jatiyo Sangsad Bhaban"
+          />
+        </div>
+      </section>
+
+      <section id="services" class="section container">
+        <div class="section-title">
+          <h2>Popular Citizen Services</h2>
+          <a href="#">View all services →</a>
+        </div>
+        <div class="card-grid four-col">
+          <article class="card"><h3>Birth & Death Registration</h3><p>Apply and verify records online through local government services.</p></article>
+          <article class="card"><h3>Passport Services</h3><p>Access e-passport application, status tracking, and appointment support.</p></article>
+          <article class="card"><h3>Land Records</h3><p>Search and request land records, mutation updates, and fee information.</p></article>
+          <article class="card"><h3>Education Board Results</h3><p>Check examination results and education notices from relevant boards.</p></article>
+        </div>
+      </section>
+
+      <section id="notice-board" class="section alt">
+        <div class="container two-col">
+          <div>
+            <h2>Latest Notices & Circulars</h2>
+            <ul class="timeline">
+              <li><strong>Cabinet Division:</strong> Public holiday circular for national observance day.</li>
+              <li><strong>Ministry of Health:</strong> Updated immunization campaign schedule.</li>
+              <li><strong>ICT Division:</strong> New digital service interoperability guideline.</li>
+              <li><strong>LGD:</strong> Local office service center timing update.</li>
+            </ul>
+          </div>
+          <div class="notice-box" id="hotline">
+            <h3>National Emergency & Support</h3>
+            <p><strong>999</strong> — Police, Fire, Ambulance</p>
+            <p><strong>333</strong> — National Helpline</p>
+            <p><strong>109</strong> — Violence Against Women/Children</p>
+            <p><strong>1098</strong> — Child Helpline</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="ministries" class="section container">
+        <div class="section-title">
+          <h2>Key Ministries & Divisions</h2>
+        </div>
+        <div class="card-grid three-col">
+          <article class="card"><h3>Ministry of Finance</h3><p>National budget, fiscal policy, and economic reform updates.</p></article>
+          <article class="card"><h3>Ministry of Education</h3><p>Curriculum, education institutions, and scholarship information.</p></article>
+          <article class="card"><h3>Ministry of Health and Family Welfare</h3><p>Public health programmes, hospitals, and awareness services.</p></article>
+          <article class="card"><h3>Ministry of Agriculture</h3><p>Farmer support, crop advisories, and agri-extension information.</p></article>
+          <article class="card"><h3>Ministry of Home Affairs</h3><p>Public safety, law and order, immigration-related updates.</p></article>
+          <article class="card"><h3>ICT Division</h3><p>Digital Bangladesh initiatives and e-governance modernization.</p></article>
+        </div>
+      </section>
+
+      <section id="news" class="section container">
+        <div class="section-title">
+          <h2>National Highlights</h2>
+        </div>
+        <div class="news-grid">
+          <article class="news-card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/PM_Sheikh_Hasina_in_2023.jpg/512px-PM_Sheikh_Hasina_in_2023.jpg" alt="Prime Minister of Bangladesh" />
+            <div><h3>Prime Minister's Office Updates</h3><p>Latest official statements, meetings, and development briefings.</p></div>
+          </article>
+          <article class="news-card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Padma_Bridge%2C_Bangladesh.jpg/640px-Padma_Bridge%2C_Bangladesh.jpg" alt="Padma Bridge" />
+            <div><h3>Infrastructure Progress</h3><p>Major transport and connectivity project milestones across the country.</p></div>
+          </article>
+          <article class="news-card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Shaheed_Minar%2C_Dhaka.jpg/512px-Shaheed_Minar%2C_Dhaka.jpg" alt="Shaheed Minar" />
+            <div><h3>National Events Calendar</h3><p>Observe key state events, commemorations, and public programmes.</p></div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer id="contact" class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <h3>Bangladesh National Portal</h3>
+          <p>Cabinet Division & a2i Programme</p>
+          <p>Email: info@bangladesh.gov.bd</p>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Use</a></li>
+            <li><a href="#">Help Desk</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Connect</h4>
+          <p>Facebook · YouTube · X</p>
+          <p>© 2026 Government of the People's Republic of Bangladesh</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
